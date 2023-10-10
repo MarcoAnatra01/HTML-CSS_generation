@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- TEMA SCURO BOOTSTRAP, aggiungere questo attributo al tag html: -->
+<!-- data-bs-theme="dark" -->
+<!-- funziona solo se si usano unicamente componenti bootstrap -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>bootstrap</title>
+</head>
+<body>
+    <!-- NAVBAR CLASSICA    -->
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+
+            <!-- .navbar-expand-lg , significa che la navbar appare espansa a partire da schermi large -->
+
+            <div class="container">
+
+              <a class="navbar-brand" href="#"> LOGO-img </a>
+
+                <!-- .navbar-toggler,  -->
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                    <!-- .ms-auto, margin-start: auto / margin-left: auto -->
+                    <!-- in questo modo il blocco navigazione si sposta a destra -->
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+
+                    <!-- .active, va messa in maniera dinamica con JS -->
+                    <!-- imposta il colore scuro alla voce del menù -->
+                    <!-- se siamo su questa pagina, metti la classe active all'<li> -->
+
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+
+                  <!-- STRUTTURA DROPDOWN - MENU NIDIFICATO -->
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+
+
+    <div class="container">
+        <!-- classe .container bootstrap -->
+        <!-- ha una max-width responsive che varia in base allo schermo -->
+
+        <h1>Bootstrap</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias amet rerum officia optio impedit iusto doloribus consectetur sequi fugiat velit, assumenda quos beatae? Quaerat mollitia fugiat aut reiciendis dignissimos earum.</p>
+
+
+        <!-- la classe .row per funzionare correttamente deve essere all'interno di una classe .container -->
+    
+        <!-- basta anche una sola classe .container -->
+    
+        <h2>Colonne Base</h2>
+
+        <div class="row">
+            <!-- colonne della stessa grandezza -->
+            <div class="col border">Colonna</div>
+            <div class="col border">Colonna</div>
+        </div>
+
+        <h2 class="mt-5">Colonne di dimensioni impostate</h2>
+
+        <div class="row">
+            <!-- colonne di dimensioni diverse -->
+            <div class="col-4 border">Sidebar (col-4)</div>
+            <div class="col-8 border">Main (col-8)</div>
+
+            <div class="col-9 border">col-9</div>
+            <div class="col-3 border">col-3</div>
+        </div>
+
+
+
+        <h2 class="mt-5">Colonne Responsive</h2>
+
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-9 border">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo a hic quisquam dolores facilis. Praesentium quam repellendus, repellat qui reiciendis temporibus odio at adipisci perspiciatis. Natus adipisci vitae ad error.</p>
+
+                <!-- SCHERMI GRANDI: col-9 -->
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 border">  
+                <!-- COL RESPONSIVE -->
+                <!-- il primo col è sempre riferito al mobile -->
+
+                <!-- MOBILE: col-12 -->
+
+                <!-- md = medium, schermi medi -->
+                <!-- SCHERMI MEDI: col-6 -->
+
+                <!-- lg = large, schermi grandi -->
+                <!-- SCHERMI GRANDI: col-3 -->
+
+                <p><strong>SIDEBAR</strong></p>
+            </div>
+        </div>
+
+
+
+        <h2 class="mt-5">Colonne Nidificate</h2>
+
+        <div class="row">
+            <div class="col-lg-8 mt-3">
+                <h3>Colonna 1</h3>
+
+                <div class="row">
+                    <div class="col-lg-4 border">colonna nidificata</div>
+                    <div class="col-lg-4 border">colonna nidificata</div>
+                    <div class="col-lg-4 border">colonna nidificata</div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mt-3">
+                <h3>Colonna 2</h3>
+
+                <div class="row">
+                    <div class="col-lg-5 border">colonna nidificata</div>
+                    <div class="col-lg-7 border">colonna nidificata</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="container my-5">
+
+        <h2>Modal</h2>
+
+        <!-- FINESTRA A SCOMPARSA CHE SI APRE AL CLICK SU UN PULSANTE -->
+
+        <!-- Modal trigger button -->
+        <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#myModal">
+          Open modal
+        </button>
+        
+        <!-- Modal Body -->
+        <!-- rimane nascosto finchè non si attiva col button -->
+
+        <!-- non è necessario mettere il Modal Body subito dopo il button -->
+
+        <div class="modal fade" id="myModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="myModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="myModalTitle">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Hey, sono un modal !
+
+                        <!-- QUA DENTRO POSSO INSERIRE ANCHE: -->
+                        <!-- UN FORM -->
+                        <!-- UN DIV CON DELLE INFO -->
+                        <!-- ecc -->
+
+                        <!-- ESEMPIO: -->
+                        <!-- clicco sull'icona del login -->
+                        <!-- invece di andare su un altra pagina per il login, mi apre un modal con il form -->
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Optional: Place to the bottom of scripts -->
+        <script>
+            const myModal = new bootstrap.Modal(document.getElementById('modalId'), options)
+        
+        </script>
+    </div>
+
+
+
+    <div class="container my-5">
+        <h2>Gallery</h2>
+
+        <div class="row my-3 gy-4">
+
+            <!-- la classe .g (gutter) imposta la SPAZIATURA in un sistema righe-colonne -->
+
+            <!-- .gy-4 imposta lo spazio verticale (y) della stessa dimensione di quello orizzontale -->
+
+            <div class="col-md-6 col-lg-3">
+                <img class="img-fluid" src="https://source.unsplash.com/600x400?dog">
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <img class="img-fluid" src="https://source.unsplash.com/600x400?dog">
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <img class="img-fluid" src="https://source.unsplash.com/600x400?dog">
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <img class="img-fluid" src="https://source.unsplash.com/600x400?dog">
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <img class="img-fluid" src="https://source.unsplash.com/600x400?dog">
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <img class="img-fluid" src="https://source.unsplash.com/600x400?dog">
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <img class="img-fluid" src="https://source.unsplash.com/600x400?dog">
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <img class="img-fluid" src="https://source.unsplash.com/600x400?dog">
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <img class="img-fluid" src="https://source.unsplash.com/600x400?dog">
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <img class="img-fluid" src="https://source.unsplash.com/600x400?dog">
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <img class="img-fluid" src="https://source.unsplash.com/600x400?dog">
+            </div>
+        </div>
+
+        
+    </div>
+    
+
+    
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

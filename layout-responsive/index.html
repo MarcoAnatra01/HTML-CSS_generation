@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ELEMENTI CHIAVE PER LA SEO: title e meta description -->
+
+    <!-- il contenuto di <title> è il link blue nella pagina di ricerca di google -->
+    <title>layout responsive</title>
+
+    <!-- meta description  -->
+    <meta name="description" content="Questa è una breve descrizione della pagina. Dovrebbe apparire sotto il title del sito nella pagina di ricerca">
+</head>
+<body>
+    <div class="container">
+
+        <header class="mainHeader">
+            <div class="logo"><img src="img/logo-donut.svg" alt=""></div>
+            
+            <!-- i LOGHI migliori sono IMMAGINI SVG , cioè IMMAGINI VETTORIALI -->
+
+            <!-- le immagini SVG: -->
+            <!-- sono facilmente scalabili e non perdono mai di definizione -->
+            <!-- occupano meno spazio in memoria -->
+            <!-- esiste proprio anche il tag specifico <svg> -->
+
+            <!-- l'opposto delle svg, sono le IMMAGINI BITMAP -->
+            <!-- formate da PIXEL -->
+            <!-- immagini con estensioni JPG, PNG ecc. -->
+            <!-- si usano per esempio per le foto -->
+            <!-- se vengono ingrandite troppo, sgranano -->
+            
+            <nav class="mainMenu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button id="menuIcon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                  </svg>
+            </button>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="cta">
+                    
+                    <!-- cta = call to action -->
+
+                    <h1>Donuts for everyone</h1>
+        
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis cupiditate, officiis assumenda minima amet explicabo aspernatur ipsa harum, dignissimos illum voluptatum sequi dolores eligendi ea error quis a vero debitis!</p>
+                </div>
+            </section>
+
+            <section class="servizi">
+                
+                <!-- servizio box 1 -->
+                <div class="servBox">
+
+                    <div class="servImage">
+                        <img src="https://source.unsplash.com/600x400?donut">
+                    </div>
+
+                    <div class="servText">
+                        <h2>Titolo h2</h2>
+
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente labore fuga maiores debitis cum? Exercitationem impedit minus, eligendi porro cum tenetur ratione et ad, eius a sit assumenda, recusandae debitis.</p>
+                    </div>
+                </div>
+
+
+                <!-- servizio box 2 -->
+                <div class="servBox">
+
+                    <div class="servImage">
+                        <img src="https://source.unsplash.com/600x400?donuts">
+                    </div>
+
+                    <div class="servText">
+                        <h2>Titolo h2</h2>
+
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente labore fuga maiores debitis cum? Exercitationem impedit minus, eligendi porro cum tenetur ratione et ad, eius a sit assumenda, recusandae debitis.</p>
+                    </div>
+                </div>
+
+
+                <!-- servizio box 3 -->
+                <div class="servBox">
+
+                    <div class="servImage">
+                        <img src="https://source.unsplash.com/600x400?sweet+donut">
+                    </div>
+
+                    <div class="servText">
+                        <h2>Titolo h2</h2>
+
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente labore fuga maiores debitis cum? Exercitationem impedit minus, eligendi porro cum tenetur ratione et ad, eius a sit assumenda, recusandae debitis.</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- GALLERIA DI IMMAGINI -->
+
+            <section class="gallery container">
+                <div class="galleryItem">
+                    <img src="https://source.unsplash.com/300x300?krapfen" alt="">
+                </div>
+
+                <div class="galleryItem">
+                    <img src="https://source.unsplash.com/300x300?krapfens" alt="">
+                </div>
+
+                <div class="galleryItem">
+                    <img src="https://source.unsplash.com/300x300?breakfast" alt="">
+                </div>
+
+                <div class="galleryItem">
+                    <img src="https://source.unsplash.com/300x300?coffee" alt="">
+                </div>
+
+                <div class="galleryItem">
+                    <img src="https://source.unsplash.com/300x300?pancake" alt="">
+                </div>
+
+                <div class="galleryItem">
+                    <img src="https://source.unsplash.com/300x300?pancakes" alt="">
+                </div>
+
+                <div class="galleryItem">
+                    <img src="https://source.unsplash.com/300x300?donuts" alt="">
+                </div>
+
+                <div class="galleryItem">
+                    <img src="https://source.unsplash.com/300x300?coffee" alt="">
+                </div>
+
+                <div class="galleryItem">
+                    <img src="https://source.unsplash.com/300x300?donut" alt="">
+                </div>
+
+                <div class="galleryItem">
+                    <img src="https://source.unsplash.com/300x300?krapfen" alt="">
+                </div>
+
+            </section>
+
+            <section class="imgRandom container">
+
+                <figure>
+                    <img src="https://source.unsplash.com/300x300?coffee" alt="">
+                    
+                    <figcaption>immagine a caso di un caffè</figcaption>
+                </figure>
+
+            </section>
+
+        </main>
+
+        <footer>
+            <strong>© Corso JAITA93</strong>
+        </footer>
+    </div>
+
+
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

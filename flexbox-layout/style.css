@@ -1,0 +1,190 @@
+*{
+    box-sizing: border-box;
+
+    /* usiamo sempre questa regola di box-sizing a meno che non venga già gestita dal framework di frontend (es. bootstrap) */
+
+    padding: 0;
+    margin: 0;  
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,h2{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+img{
+    /* rendo tutte le immagini FLUIDE con max-width: 100% */
+
+    /* le immagini non escono dal contenitore anche se la loro dimensione intrinseca è più grande del contenitore */
+
+    /* DIFFERENZA width e max-width */
+
+    max-width: 100%;  
+    /* AMPIA AL MASSIMO quanto il contenitore */
+    /* l'immagine si adatta in base a quanto occupano gli altri elementi del contenitore*/
+
+    /* with: 100%  */
+    /* ampia quanto il contenitore */
+    /* l'immagine occupa tutto il contenitore*/
+
+    height: auto;
+}
+
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mainHeader{
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.logo img{
+    /* imposto le dimensioni del logo, in particolare l'altezza */
+
+    /* imposto l'altezza perchè il logo si trova nell'header, che è un tag con spazio ben limitato in altezza */
+
+    height: 3rem;
+    width: auto;
+    margin: 1rem;
+}
+
+.mainMenu a {
+    text-decoration: none;
+    color: rgb(34,45,102);
+}
+.mainMenu li{
+    font-size: 1.2rem;
+}
+.mainMenu a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bold;
+}
+.mainMenu ul{
+    /* per poter allineare in orizzontale gli <li> */
+    display: flex; 
+
+    /* per eliminare i pallini della lista */
+    list-style-type: none;
+
+    /* gap inserisce uno spazio vuoto tra gli elementi figli */
+    gap: 1.5rem;
+
+    margin-right: 4rem;
+}
+
+
+
+
+
+/* HERO E CALL TO ACTION */
+
+
+.hero {
+
+    background-image: url('https://source.unsplash.com/1920x1080?ocean');
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 100vh;  /*alto come tutto il viewport */
+
+    display: flex;
+
+    justify-content: center;  /*al centro in orizzontale */
+    align-items: center;  /*al centro in verticale */
+
+    text-align: center;
+
+    /* text-align è una proprietà ereditaria e quindi anche i figli di
+    section.hero prenderanno la regola text-align: center */
+}
+
+.cta{
+    width: 50%;
+    height: auto;
+}
+
+.cta h1{
+    font-size: 3rem;
+    color: white;
+}
+.cta p{
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+
+
+
+
+/* SERVIZI */
+
+section.servizi{
+    margin-top: 3rem;
+}
+
+.servBox{
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;  /* spazio tra le colonne */
+    padding-bottom: 2rem;
+}
+
+.servImage{
+    width: 33.33%;
+}
+
+.servText{
+    width: 66.66%;
+}
+
+.servBox:nth-of-type(even) .servImage {  
+
+    /* even = pari , odd = dispari */
+
+    /* seleziono i .servImage dentro gli elementi .servBox di numero PARI */
+
+    order: 1;
+    /* ordine :  -1 0 1 */
+}
+
+.servBox:nth-of-type(even) .servText {
+    text-align: right;
+}
+
+
+
+/* GALLERY */
+
+.gallery {
+    display: flex;
+
+    flex-wrap: wrap;  /* gli elementi figli vanno a capo quando finiscono lo spazio */
+}
+
+.galleryItem{
+
+    /* imposto la larghezza per avere 4 colonne di immagini */
+
+    width: 25%;
+
+    padding: 0.5rem;
+}
+
+.galleryItem img {
+
+    /* per eliminare lo spazio indesiderato sotto le immagini, trasformo le immagini dei galleryItem in elementi blocco */
+
+    display: block;
+}

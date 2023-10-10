@@ -1,0 +1,39 @@
+
+@mixin myGradient($from: #000000, $to: #ffffff, $dir: 0deg) {
+
+    // quelli tra parentesi sono i valori di default
+
+    // variabili:
+    // $from, colore di partenza
+    // $to, colore di arrivo
+    // $dir, direzione
+
+    background: $from;
+    background: linear-gradient($dir, $from 0%, $to 100%);
+}
+
+
+@mixin myButton($bgColor: #222, $textColor: #fff, $outline: false) {
+
+    background: $bgColor;
+    color: $textColor;
+    padding: 0.5rem 1.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 1rem;
+
+    &:hover {
+        // FUNZIONI DI MANIPOLAZIONE DEI COLORI
+
+        background: darken($bgColor, 5%); // scurisce il colore di partenza
+    }
+
+    @if $outline == true {
+        background: transparent;
+        border: 1px solid $bgColor;
+
+        &:hover {
+            background: transparentize($bgColor, 0.5);
+        }        
+    }
+}

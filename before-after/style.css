@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background: #ffff00;
+    color: #222;
+}
+
+.container:before{
+    content: 'Ciao';
+}
+
+.container:after{
+    content: 'fine';
+}
+
+
+#hero{
+    background-image: url('https://source.unsplash.com/1920x900/?sky');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+
+    position: relative;
+}
+
+#hero::before {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgb(red, green, blue);
+}

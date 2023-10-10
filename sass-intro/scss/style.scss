@@ -1,0 +1,79 @@
+
+// se importo un file scss PARZIALE (_fileParziale.scss) non occorre indicare percorso esatto ed estensione
+
+@import "footer";
+@import 'variables';
+@import 'mixins';
+
+
+body{
+    font-family: $sans-serif-font;
+    color: $primary;
+
+
+    // per richiamare un MIXIN devo usare @include
+    @include myGradient(#FF9900, #e000f8, 180deg);
+}
+
+h1{
+    font-family: $serif-font;
+    padding: $defPadding * 2;
+}
+
+p.bigText {  
+    
+    // @extend serve per prendere le regole di un altro selettore
+
+    @extend h1;
+}
+
+
+
+// NIDIFICARE I SELETTORI
+
+#mainNav {
+    background: #999;
+
+    #mainMenu{
+        list-style-type: none;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        
+
+        li{
+            padding: $defPadding/4 $defPadding*2;
+
+            // padding sopra e sotto: 
+            // padding destra e sinistra: 
+
+            a{
+                text-decoration: none;
+                display: block;
+                font-weight: bold;
+                color: $primary;
+
+                // stili che prende quando il tag <a> ha associata anche la classe .social
+                &.social{
+                    color: #222;
+                }
+
+                &:hover{
+                    color: violet;
+                }
+            }
+        }
+    }
+}
+
+
+
+.clickMe {
+    // porta con sè tutte le regole del mixin 
+
+    @include myButton(#FFCC00, #FFF);
+}
+
+.clickMeOutline {
+    @include myButton(#FF9900, #000, true);
+}

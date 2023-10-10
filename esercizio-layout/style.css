@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 70%;
+    margin: 1rem auto;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-family: 'Pathway Extreme', sans-serif;
+    margin-bottom: 1.2rem;
+    color: rgb(34,45,102);
+}
+
+header > p {
+    font-size: 1.1rem;
+    font-family: 'Noto Serif', serif;
+    margin-top: 4rem;
+}
+
+div.header_img {
+    width: 100%;
+    height: auto;
+}
+
+.header_img > img {
+    width: 40%;
+    height: auto;
+    border-radius: 0.6rem;
+}
+
+nav{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+}
+nav ul{
+    list-style-type: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+nav li {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid black;
+    border-radius: 0.3rem;
+}
+nav li a {
+    text-decoration: none;
+    color: black;
+}
+nav li:hover{
+    cursor: pointer;
+    background: #eee;
+}
+
+article {
+    margin: 2.7rem 0;
+    padding: 1rem;
+}
+
+h2{
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    scroll-margin-top: 1.5rem;
+    /* quando scrolla all'ID corrispondente lascia un margin-top di 1.5rem*/
+    margin-bottom: 1.5rem;
+    color: rgb(34,45,102);
+}
+
+article p {
+    font-size: 1.2rem;
+    font-family: 'Noto Serif', serif;
+}
+
+article ul {
+    font-size: 1.2rem;
+    font-family: 'Noto Serif', serif;
+}
+
+main img{
+    margin-bottom: 1.2rem;
+}
+

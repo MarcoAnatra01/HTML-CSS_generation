@@ -1,0 +1,40 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: cadetblue;
+}
+
+
+
+
+/* screen si riferisce al viewport */
+
+/* viewport con ampiezza minima di 980px */
+
+@media screen and (min-width: 992px) {
+
+    /* tutte le regole per questo range di dimensioni */
+
+    body {
+        background-color: lightcoral;
+        /* questa regola sovrascrive la precedente che si trova fuori dalla media query */
+         
+    }
+
+    /* .box{} */
+
+}
+
+
+
+
+/* media queries che definisce le regole in base all'ORIENTAMENTO DELLO SCHERMO */
+
+@media screen and (orientation: portrait) {
+
+    /* landscape: orizzontale | portrait: verticale */
+
+    body{
+        background-color: brown;
+    }
+}

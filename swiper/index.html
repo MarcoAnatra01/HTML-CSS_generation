@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- LIBRERIA CSS SWIPER -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <title>Swiper</title>
+</head>
+<body>
+    <!-- https://swiperjs.com/ -->
+    <!--Offre una libreria js per fare carousel(immagini che scorrono)-->
+
+
+    <!-- VERSIONE BASE -->
+    <!-- Slider main container -->
+    <div class="swiper">
+        <div class="swiper-wrapper">
+        <!-- Slides -->
+            <div class="swiper-slide">
+
+                <!-- POSSIAMO USARE 2 IMMAGINI DIVERSE PER LAYOUT RESPONSIVE CON IL TAG <picture> -->
+
+                <!-- SI USA IL TAG <picture> con dentro: -->
+                <!-- <source> per l'img desktop -->
+                <!-- <img> per l'img mobile -->
+
+                <!-- <picture>
+                    immagine per il desktop
+                    <source srcset="slide-horiz" media="min-width: 992px">
+
+                    immagine per il mobile
+                    <img class="img-fluid" src="slide-vert.jpg" alt="">
+                </picture> -->
+
+                <img src="https://source.unsplash.com/1920x900/?italy" alt="" class="img-fluid">
+            </div>
+            <div class="swiper-slide">
+                <img src="https://source.unsplash.com/1920x900/?italy" alt="" class="img-fluid">
+            </div>
+            <div class="swiper-slide">
+                <img src="https://source.unsplash.com/1920x900/?italy" alt="" class="img-fluid">
+            </div>
+        </div>
+
+        <!-- pagination -->
+        <!-- pallini sotto il carousel -->
+        <!-- mostrano a che punto siamo nello scorrimento -->
+        <div class="swiper-pagination"></div>
+    
+        <!-- navigation buttons -->
+        <!-- button per scorrere -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+
+
+
+
+    
+
+    <!-- LIBRERIA JS SWIPER -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

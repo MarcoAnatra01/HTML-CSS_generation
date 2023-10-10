@@ -1,0 +1,70 @@
+
+body { overflow-x: hidden; }
+
+#carousel{
+    max-width: 100vw;
+    height: auto;
+}
+
+.slideText{
+    text-align: center;
+    font-size: 1vw;
+}
+.slideText p {
+    font-size: 1.4vw;
+}
+
+div#clientsRow {
+    /* si tratta di un div con classe bootstrap .row che ha già di default display: flex; */
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+}
+
+#clientsRow .col-4{
+    margin: 1.5rem;
+}
+
+div#clientsRow::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background: #f8f9fa;
+    margin: 0;
+}
+
+
+#clientsRow img {
+    width: 5rem;
+    height: auto;
+    filter: grayscale(100%);
+}
+
+
+
+
+@media screen and (min-width: 992px) {
+
+    ul.navbar-nav > li.nav-item {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    #carousel{
+        max-width: 100vw;
+        height: 100vh;
+    }
+
+    main{
+        margin-top: 15rem;
+    }
+
+    div#clientsRow {
+        /* è un div con classe bootstrap .row che ha già di default display: flex; */
+        justify-content: space-between;
+    }
+}

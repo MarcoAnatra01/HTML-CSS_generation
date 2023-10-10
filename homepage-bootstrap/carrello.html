@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <title>Il tuo carrello</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+  <div class="container">
+      <header id="mainHeader" class="mb-5">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <a class="navbar-brand" href="#"><img src="./img/logo.svg" alt="logo" style="height: 3.5rem; width: auto; margin: 0.5rem;"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Novità</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Chi siamo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Negozio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Carrello</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#"><i class="bi bi-facebook"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#"><i class="bi bi-instagram"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#"><i class="bi bi-twitter"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+      </header>
+
+
+      <main>
+        <div id="boxCarrello" class="row">
+
+          <!-- INTESTAZIONE CARRELLO + PRODOTTI CARRELLO -->
+          <div class="col-lg-8">
+
+            <!-- INTESTAZIONE CARRELLO -->
+              <div class="row mb-5">
+                  <div class="col-9 col-md-10 col-lg-10">
+                      <h2>Il tuo carrello</h2>
+                  </div>
+                  <div class="col-3 col-md-2 col-lg-2">
+                      <span class="itemsNumber"></span>items
+                  </div>
+              </div>
+
+              <!-- 1 RIGA PER ALBUM -->
+              <div id="rowAlbum" class="row p-0 mb-5 border-top border-white">   
+                  <div class="col-sm-auto col-lg-6">
+                      <div class="row">
+                          <div class="col-sm-12 col-lg-5">
+                              <img src="./img/strokes.jpg" alt="strokes_img" class="rounded mt-4">
+                          </div>
+                          <div class="col-sm-auto col-lg-7 d-flex align-items-center">
+                              <div class="row">
+                                  <div class="albumType col-lg-12">Vinile</div>
+                                  <div class="albumTitle col-lg-12"><strong>The New Abnormal</strong></div>
+                              </div>
+                          </div> 
+                      </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-6">
+                      <div class="row d-sm-flex justify-content-start align-items-center">
+                          <div class="col-sm-6 col-lg-6 d-flex">
+                              <button class="btn minus">
+                                <span> - </span>
+                              </button>
+
+                              <input type="number" class="rounded bg-light p-1 form-control" value="1" min="0" max="100" style="width: 4rem; height: 2rem; color: #222;">
+
+                              <button class="btn plus">
+                                <span> + </span>
+                              </button>
+                          </div>
+                          <div id="priceItem" class="col-sm-6 col-lg-6">
+                              <strong>€ 20.00</strong>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div id="rowAlbum" class="row p-0 mb-5 border-top border-white">   
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-5">
+                            <img src="./img/alicia.jpg" alt="alicia_img" class="rounded mt-4">
+                        </div>
+                        <div class="col-lg-7 d-flex align-items-center">
+                            <div class="row">
+                                <div class="albumType col-lg-12">Vinile</div>
+                                <div class="albumTitle col-lg-12"><strong>Alicia</strong></div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <input type="number" class="rounded bg-light p-1 form-control" value="1" style="width: 4rem; height: 2rem; color: #222;">
+                        </div>
+                        <div id="priceItem" class="col-lg-6">
+                            <strong>€ 20.00</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="rowAlbum" class="row p-0 mb-5 border-top border-white">   
+              <div class="col-lg-6">
+                  <div class="row">
+                      <div class="col-sm-12 col-lg-5">
+                          <img src="./img/radiohead.jpg" alt="radiohead_img" class="rounded mt-4">
+                      </div>
+                      <div class="col-lg-7 d-flex align-items-center">
+                          <div class="row">
+                              <div class="albumType col-lg-12">CD Audio</div>
+                              <div class="albumTitle col-lg-12"><strong>OK Computer</strong></div>
+                          </div>
+                      </div> 
+                  </div>
+              </div>
+              <div class="col-lg-6">
+                  <div class="row">
+                      <div class="col-lg-6">
+                          <input type="number" class="rounded bg-light p-1 form-control" value="1" style="width: 4rem; height: 2rem; color: #222;">
+                      </div>
+                      <div id="priceItem" class="col-lg-6">
+                          <strong>€ 20.00</strong>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div id="rowAlbum" class="row mb-5 border-top border-white"></div>  
+          </div>   <!-- CHIUSURA .col PER I PRODOTTI -->
+
+
+        <!-- RIEPILOGO ORDINE -->
+        <div class="col-lg-3 ms-5">
+
+            <div class="row">
+                <div class="col-lg-12 mb-5">
+                    <h4>Riepilogo ordine</h4>
+                </div>
+                <div class="col-lg-12 mb-3 border-bottom border-white"></div>
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-lg-6">
+                  <div class="text-left">
+                    <strong>
+                      OGGETTI: 
+                      <div class="ms-2 bg-primary text-white rounded d-inline-block text-center p-1 itemsNumber" style="height: 2rem; width: 2rem;"> 3 </div>
+                    </strong>
+                  </div>
+                </div>
+                <div class="col-lg-6 d-flex align-items-center">
+                  <strong>€ 132.00</strong>
+                </div>
+            </div>
+
+            <div class="row mb-4">
+              <div class="col-lg-12">
+                  <label for="spedizione" class="form-label"><strong>SPEDIZIONE</strong></label>
+                  <select id="spedizione" class="form-select bg-light text-dark" aria-label="Disabled select example">
+                    <option selected>Tipo spedizione</option>
+                    <option value="standard">Standard - € 5.00</option>
+                    <option value="rapida">Rapida - € 10.00</option>
+                  </select>
+              </div>
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-lg-12 mb-2">
+                    <strong>CODICE SCONTO</strong>
+                </div>
+                <div class="col-lg-12 mb-0">
+                    <input type="text" class="rounded bg-light text-dark p-1 form-control" style="width: 100%; height: 3rem; color: #222;">
+                </div>
+                <div class="col-lg-6">
+                  <span style="font-size: 1rem;">Inserisci codice</span>
+                </div>
+            </div>
+
+            <div class="row mb-2"><div class="col mt-4 border-bottom border-white"></div></div>
+
+            <div class="row mb-5">
+                <div class="col-lg-6">
+                    <strong>TOTALE</strong>
+                </div>
+                <div class="col-lg-6">
+                    <strong>€ 137.00</strong>
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-lg-6">
+                    <button type="button" class="btn btn-primary">Acquista</button>
+                </div>
+            </div>
+
+          </div>  <!-- chiusura boxCarrello -->
+      </main>
+  </div>
+
+  
+
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+  <script src="./js/scriptCarrello.js"></script>
+</body>
+
+</html>
